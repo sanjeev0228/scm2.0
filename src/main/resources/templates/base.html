@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"
+      th:fragment="parent(content,title,script)"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BASE</title>
+  <link rel="stylesheet" data-th-href=".\src\main\resources\static\output.css">
+  <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+          rel="stylesheet"
+  />
+</head>
+<body>
+<div id="content"></div>
+
+
+
+
+
+<!--flowbite Java Script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<th:block data-th-replace="${script}"></th:block>
+
+</body>
+</html>
